@@ -12,13 +12,13 @@ git clone https://github.com/Curb403/ca-server-podman-module.git
 cd ca-server-podman-module
 
 # 2. Установка зависимостей
-pip install -r requirements_ca.txt
+pip install -r requirements.txt
 
 # 3. Запуск CA сервера
 python ca_server.py
 ``` 
 
-## 🐳 Запуск в Docker
+## 🐳 Запуск в Podman
 ```bash
 # Сборка образа
 podman build -t ca-server .
