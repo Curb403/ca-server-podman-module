@@ -95,4 +95,4 @@ curl http://localhost:8444/api/v1/health
 openssl verify -CAfile data/certs/ca.crt data/certs/service.crt
 ```
 ## 📄 Лицензия
-MIT © Secure Storage Team
+MIT © Curb403
