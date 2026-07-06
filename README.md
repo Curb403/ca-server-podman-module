@@ -21,10 +21,13 @@ python ca_server.py
 ## 🐳 Запуск в Docker
 ```bash
 # Сборка образа
-docker build -t ca-server .
+podman build -t ca-server .
 
-# Запуск контейнера
-docker run -d -p 8444:8444 -v ./data:/app/data --name ca-server ca-server
+# Запуск контейнера (фоновый режим)
+podman run -d -p 8444:8444 -v ./data:/app/data --name ca-server ca-server
+
+# Или с использованием Podman Compose
+podman-compose -f podman-compose.ca.yaml up -d
 ``` 
 
 ## 📡 API Эндпоинты
