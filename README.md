@@ -4,9 +4,9 @@
 
 **CA Server** — это внутренний центр сертификации для выдачи и управления TLS-сертификатами в инфраструктуре микросервисов. Позволяет автоматически выпускать доверенные сертификаты для любых сервисов в локальной сети.
 
-## 🐳 Быстрый старт: Запуск сразу в модуль Podman
+## 🚀 Быстрый старт: Запуск сразу в модуль Podman
 ```bash
-# 0. Установить Podman
+# 0. Установка Podman
 sudo apt update
 sudo apt install -y podman
 podman --version
@@ -15,7 +15,7 @@ podman --version
 git clone https://github.com/Curb403/ca-server-podman-module.git
 cd ca-server-podman-module
 
-# Установка модуля с использованием Podman Compose
+# 2. Установка модуля с использованием Podman Compose
 podman-compose -f podman-compose.ca.yaml up -d
 ``` 
 
