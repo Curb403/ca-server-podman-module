@@ -15,7 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY ca_config.py .
 COPY cert_manager.py .
 COPY ca_server.py .
-#COPY ca_client.py .
 
 # Создание директорий
 RUN mkdir -p /app/data /app/certs
